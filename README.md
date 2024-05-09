@@ -1,6 +1,8 @@
 This is my react <i> <b> Project for final evaluation at college</b> </i>, I'll try to keep updating the README File as well. Wish me Luck HAHAHA.
 
 <h3>Checkpoint 1</h3>
+<ol>
+<li>
 <p>Navbar is done
     <b>Features Used</b>
     <ul>
@@ -9,3 +11,8 @@ This is my react <i> <b> Project for final evaluation at college</b> </i>, I'll 
     <li>UseState Hook</li>
     </ul>
 </p>
+</li>
+<li>
+    Started Making the Home page
+</li>
+</ol>
