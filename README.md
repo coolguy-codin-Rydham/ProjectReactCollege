@@ -9,6 +9,7 @@ This is my react <i> <b> Project for final evaluation at college</b> </i>, I'll 
     <li>JSX</li>
     <li>ES6</li>
     <li>UseState Hook</li>
+    <li>Map</li>
     </ul>
 </p>
 </li>
