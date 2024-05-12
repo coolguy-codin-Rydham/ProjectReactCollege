@@ -14,6 +14,7 @@ This is my react <i> <b> Project for final evaluation at college</b> </i>, I'll 
 </p>
 </li>
 <li>
-    Started Making the Home page
+    Done with the Hero Section.
 </li>
+<li>Moving on to part2, Services</li>
 </ol>
