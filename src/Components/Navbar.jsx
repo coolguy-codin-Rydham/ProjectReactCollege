@@ -4,10 +4,16 @@ import NavbarRes from "./NavbarRes";
 import Ham from "/Icons/ham.svg"
 import Right from "/Icons/Right.svg"
 import { useState } from "react";
+import {motion} from "framer-motion"
 const Navbar = () => {
    const [show, isShow] = useState(false)
   return (
-    <div className="max-w-[1500px] h-full w-full max-lg:px-10 py-6 flex items-center justify-between">
+    <motion.div 
+    initial={{y:-50, opacity:0.4}}
+    whileInView={{y:0, opacity:1}}
+    transition={{duration:0.3}}
+    exit={{y:-50, opacity:0.4}}
+    className="max-w-[1500px] h-full w-full max-lg:px-10 py-6 flex items-center justify-between">
       <div id="logo" className="w-1/2">
         <a href="#">
           <img src={Logo} alt="" />
@@ -50,7 +56,7 @@ const Navbar = () => {
 
           {show &&  <NavbarRes isShow={isShow} Logo={Logo} NavItems={NavItems} Lang={Lang}/>}
 
-    </div>
+    </motion.div>
   );
 };
 

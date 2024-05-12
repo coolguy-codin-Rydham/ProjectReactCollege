@@ -1,10 +1,18 @@
 import Cross from "/Icons/maki_cross.svg";
 import PropTypes from "prop-types";
 import Right from "/Icons/Right.svg"
+import {AnimatePresence, motion} from "framer-motion"
 
 const NavbarRes = ({ Logo, NavItems, Lang, isShow }) => {
   return (
-    <div className="absolute z-50 top-0 right-0 h-screen backdrop-blur-xl bg-slate-700/10 w-[30rem]">
+    <AnimatePresence>
+      
+    <motion.div key={Logo}
+    initial={{x:200, opacity:0.4}}
+    animate={{x:0, opacity:1}}
+    exit={{x:200, opacity:0.4}}
+    transition={{duration:0.3}}
+    className="absolute z-50 top-0 right-0 h-screen backdrop-blur-xl bg-slate-700/10 w-[30rem]">
       <div className="p-10">
         <div id="logo" className="grid w-full grid-cols-2 gap-10 pb-10 pr-10">
           <a href="#">
@@ -51,7 +59,9 @@ const NavbarRes = ({ Logo, NavItems, Lang, isShow }) => {
         </button>
         </div>
       </div>
-    </div>
+    </motion.div>
+    
+    </AnimatePresence>
   );
 };
 NavbarRes.propTypes = {

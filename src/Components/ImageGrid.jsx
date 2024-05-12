@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Projects, Projects2 } from "../Constants/Constants"
+import {motion} from "framer-motion"
 
 const ImageGrid = () => {
 
@@ -8,7 +9,14 @@ const ImageGrid = () => {
   
   return (
     <>
-    <div className="relative z-50 grid w-full h-full grid-cols-1 gap-2 p-10 lg:grid-cols-3 md:grid-cols-2 ">
+    <motion.div
+
+    initial={{y:-50, opacity:0.4}}
+    whileInView={{y:0, opacity:1}}
+    transition={{duration:0.3}}
+    exit={{y:-50, opacity:0.4}}
+    
+    key={select} className="relative z-50 grid w-full h-full grid-cols-1 gap-2 p-10 lg:grid-cols-3 md:grid-cols-2 ">
       {select.map((proj, index)=>{
         return(
           <div key={index} className="">
@@ -16,7 +24,7 @@ const ImageGrid = () => {
           </div>
         )
       })}
-    </div>
+    </motion.div>
 
     {select === Projects && <button onClick={()=>{
       setSelect(Projects2)

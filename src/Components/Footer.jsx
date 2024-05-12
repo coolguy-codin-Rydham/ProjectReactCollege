@@ -2,10 +2,16 @@ import { NavItems } from "../Constants/Constants";
 import Dribble from "/Socials/Dribble.svg"
 import FB from "/Socials/FB.svg"
 import Twitter from "/Socials/Twitter.svg"
+import {motion} from "framer-motion"
 const Footer = () => {
   return (
     <div className="flex items-center justify-center bg-[#314584] w-full relative z-50 p-10">
-      <div className="flex flex-col items-center justify-center max-w-[1440px] w-full">
+      <motion.div 
+      initial={{opacity:0}}
+      whileInView={{opacity:1}}
+      transition={{duration:0.3}}
+      exit={{opacity:0}}
+      className="flex flex-col items-center justify-center max-w-[1440px] w-full">
         <p className="font-semibold text-white uppercase">Doob</p>
         <h3 className="uppercase pt-5 font-semibold text-5xl text-[#FF3946]">Creativity Above</h3>
         <ul id="navItems" className="flex items-center justify-center w-full gap-12 py-10 max-lg:hidden">
@@ -28,7 +34,7 @@ const Footer = () => {
           <a href=""><img src={Dribble} className="h-9" alt="" /></a>
 
         </div>
-      </div>
+      </motion.div>
       
     </div>
   )
