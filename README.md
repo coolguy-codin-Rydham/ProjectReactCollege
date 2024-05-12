@@ -27,5 +27,7 @@ Added TS particles looks good asf
 <li>
 Projects Section Done
 </li>
-<li>News Section to Start</li>
+<li>News Section Done</li>
+<li>Project Completed</li>
+<li>Gonna try to add animations let's see</li>
 </ol>

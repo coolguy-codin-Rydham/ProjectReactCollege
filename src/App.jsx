@@ -1,4 +1,5 @@
 import Contact from "./Components/Contact"
+import Footer from "./Components/Footer"
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 import News from "./Components/News"
@@ -19,6 +20,7 @@ function App() {
       <Projects/>
       <News/>
       <Contact/>
+      <Footer/>
     </div>
   </div>
  )

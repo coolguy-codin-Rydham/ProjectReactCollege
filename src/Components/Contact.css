@@ -20,3 +20,9 @@ input, textarea{
     @apply focus:outline-none relative z-50
 
 }
+@media (max-width: 768px) {
+    .Inputs {
+        grid-template-areas: "Email"
+                                "Subject" "Message""Message";
+    }
+}

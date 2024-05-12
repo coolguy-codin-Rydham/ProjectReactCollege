@@ -14,7 +14,7 @@ const News = () => {
         <div className="max-w-[1440px] w-full p-10">
             <h5 className=" uppercase font-semibold pb-4 text-[#FF3946]">Blog Stories</h5>
             <h1 className="text-5xl font-semibold text-[#314584]">Check Our News</h1>
-            <div className="grid grid-cols-3 gap-10 pt-10 pb-5">
+            <div className="grid grid-cols-1 gap-10 pt-10 pb-5 md:grid-cols-2 lg:grid-cols-3">
 
                 <Cardi/>
                 <Cardi/>
