@@ -3,6 +3,7 @@ import Dribble from "/Socials/Dribble.svg"
 import FB from "/Socials/FB.svg"
 import Twitter from "/Socials/Twitter.svg"
 import {motion} from "framer-motion"
+//hey
 const Footer = () => {
   return (
     <div className="flex items-center justify-center bg-[#314584] w-full relative z-50 p-10">
