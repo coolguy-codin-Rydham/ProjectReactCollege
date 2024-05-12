@@ -4,7 +4,7 @@ import Right from "/Icons/Right.svg"
 
 const NavbarRes = ({ Logo, NavItems, Lang, isShow }) => {
   return (
-    <div className="absolute  top-0 right-0 h-screen backdrop-blur-sm bg-slate-700/10 w-[30rem]">
+    <div className="absolute z-50 top-0 right-0 h-screen backdrop-blur-xl bg-slate-700/10 w-[30rem]">
       <div className="p-10">
         <div id="logo" className="grid w-full grid-cols-2 gap-10 pb-10 pr-10">
           <a href="#">
