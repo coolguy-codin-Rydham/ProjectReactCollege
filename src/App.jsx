@@ -1,3 +1,4 @@
+import Contact from "./Components/Contact"
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 import News from "./Components/News"
@@ -17,6 +18,7 @@ function App() {
       <Reviews/>
       <Projects/>
       <News/>
+      <Contact/>
     </div>
   </div>
  )

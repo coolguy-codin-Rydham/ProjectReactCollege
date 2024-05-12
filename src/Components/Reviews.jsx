@@ -7,7 +7,7 @@ import { useState } from "react";
 import React from "react";
 
 const Reviews = () => {
-    const [currIndex, setCurrIndex] = useState(1);
+    const [currIndex, setCurrIndex] = useState(0);
     const currReview = R[currIndex]
     const handlePrev = ()=>{
         setCurrIndex(currIndex>0?currIndex-1:currIndex)
@@ -44,10 +44,10 @@ const Reviews = () => {
               </p>
             </>
             <div className="flex gap-2 pt-10">
-              <div className={`flex items-center cursor-pointer justify-center w-10 h-10 ${currIndex==0?"bg-gray-200 scale-90":"bg-[#FF3946]"} duration-200 rounded-full`} onClick={handlePrev}>
+              <div className={`flex items-center relative z-50 cursor-pointer justify-center w-10 h-10 ${currIndex==0?"bg-gray-200 scale-90":"bg-[#FF3946]"} duration-200 rounded-full`} onClick={handlePrev}>
                 <img src={Left} className="h-6" alt="" />
               </div>
-              <div className={`flex items-center justify-center cursor-pointer w-10 h-10 ${currIndex==R.length-1?"bg-gray-200 scale-90":"bg-[#FF3946]"} duration-200 rounded-full`} onClick={handleNext}>
+              <div className={`flex items-center justify-center relative z-50 cursor-pointer w-10 h-10 ${currIndex==R.length-1?"bg-gray-200 scale-90":"bg-[#FF3946]"} duration-200 rounded-full`} onClick={handleNext}>
                 <img src={Right} alt="" className="h-6" />
               </div>
             </div>
