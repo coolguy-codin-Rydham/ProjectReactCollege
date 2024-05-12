@@ -16,6 +16,11 @@ This is my react <i> <b> Project for final evaluation at college</b> </i>, I'll 
 </li>
 
 <h3>Checkpoint 3</h3>
+<li>
+<p>
+    Review Section Done
+</p>
+</li>
 </ol>
 
 

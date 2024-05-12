@@ -169,3 +169,18 @@ export const CardContent = [
         Content: " Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt."
     }
 ]
+export const Reviews = [
+    {
+        Name: "harvey Specter",
+        Review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br /> sed do eiusmod tempor incididunt ut labore et dolore <br /> magna aliqua  <br />Lorem ipsum dolor sit amet,  consectetur adipiscing elit, <br />  sed do eiusmod  tempor incididunt "
+    },
+    {
+        Name: "Jessica Pearson",
+        Review: "Vestibulum ac diam sit amet quam vehicula elementum amet <br /> est on dui. Nulla porttitor accumsan tincidunt.<br /> Vestibulum ac diam sit amet. <br /> Quam vehicula elementum amet est on dui. Nulla porttitor <br /> accumsan tincidunt."
+    },
+    {
+        Name: "Mike Ross",
+        Review: "Vestibulum ac diam sit amet quam vehicula elementum amet <br /> est on dui. Nulla porttitor accumsan tincidunt.<br /> Vestibulum ac diam sit amet.<br />Lorem ipsum dolor sit amet,  consectetur adipiscing elit, <br />  sed do eiusmod  tempor incididunt"
+    }
+
+];

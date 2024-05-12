@@ -6,10 +6,10 @@ const Services = () => {
   return (
     <>
     <div className="relative flex items-start w-full justify-normal">
-        <img src={Wave2} className="absolute top-52" alt="" />
+        <img src={Wave2} className="absolute top-32 -z-50" alt="" />
     </div>
-    <div className="flex items-center justify-center w-full">
-        <div className="max-w-[1440px] grid grid-cols-3 w-full h-full p-10">
+    <div className="flex items-center justify-center w-full pb-10">
+        <div className="max-w-[1440px] grid lg:grid-cols-3 grid-cols-1 w-full h-full p-10">
             <div className="flex flex-col items-start justify-center w-full h-full px-10 py-24">
                 <h1 className="mb-9 text-[2.98rem] font-semibold leading-normal text-[#314584]">Anything you need we&apos;ve <br /> got you covered</h1>
                 <Button>Get in Touch</Button>
