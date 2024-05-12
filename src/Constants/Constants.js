@@ -1,6 +1,13 @@
 import Icon from "/Services/Icon.svg"
 import Icon1 from "/Services/Inon1.svg"
 
+import Portfolio from "/take/p2.png"
+import Flappy from "/take/p6.png"
+import Bank from "/take/p7.png"
+import Nike from "/take/p9.png"
+import Nike2 from "/take/p10.png"
+import Portfolio2 from "/take/p21.png"
+
 
 export const NavItems = [
     {
@@ -184,3 +191,61 @@ export const Reviews = [
     }
 
 ];
+
+export const Projects=[
+    {
+        Image:Portfolio2,
+        Link:"https://rydhampreet.vercel.app/"
+    },
+    
+    {
+        Image:Nike,
+        Link:"https://nike-landing-page-ten-self.vercel.app/"
+    },
+    {
+        Image:Bank,
+        Link:"https://hoobank-sigma-ten.vercel.app/"
+        
+    },
+    {
+        Image:Portfolio,
+        Link:"https://personal-portfolio-beta-sable.vercel.app/"
+    },
+    {
+        Image:Nike2,
+        Link:"https://nike-page-new.vercel.app/"
+    },
+    {
+        Image:Flappy,
+        Link:"https://flappy-birds-js.vercel.app/"
+    },
+]
+
+export const Projects2=[
+    ...Projects, {
+        Image:Portfolio2,
+        Link:"https://rydhampreet.vercel.app/"
+    },
+    
+    {
+        Image:Nike,
+        Link:"https://nike-landing-page-ten-self.vercel.app/"
+    },
+    {
+        Image:Bank,
+        Link:"https://hoobank-sigma-ten.vercel.app/"
+        
+    },
+    {
+        Image:Portfolio,
+        Link:"https://personal-portfolio-beta-sable.vercel.app/"
+    },
+    {
+        Image:Nike2,
+        Link:"https://nike-page-new.vercel.app/"
+    },
+    {
+        Image:Flappy,
+        Link:"https://flappy-birds-js.vercel.app/"
+    },
+]

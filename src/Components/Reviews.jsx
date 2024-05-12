@@ -21,11 +21,11 @@ const Reviews = () => {
         <img src={Wave3} className="absolute top-72 -z-50" alt="" />
       </div>
       <div className="flex items-center justify-center w-full pt-10">
-        <div className="max-w-[1440px] flex items-center justify-center h-full w-full">
+        <div className="max-w-[1440px] flex max-lg:flex-col items-center justify-center h-full w-full">
           <div className="w-full h-full p-10">
             <img src={Desk} alt="" />
           </div>
-          <div className="w-full h-full">
+          <div className="flex flex-col w-full h-full max-lg:items-center max-lg:text-center">
             <>
               <p className=" font-semibold pb-5 text-[#FF3946]">OUR COMPANY</p>
               <h3 className="pb-4 text-[#314584] text-5xl font-semibold">

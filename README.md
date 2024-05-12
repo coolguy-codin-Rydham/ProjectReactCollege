@@ -21,6 +21,11 @@ This is my react <i> <b> Project for final evaluation at college</b> </i>, I'll 
     Review Section Done
 </p>
 </li>
+<li>
+Added TS particles looks good asf
+</li>
+<li>
+Projects Section Done
+</li>
+<li>News Section to Start</li>
 </ol>
-
-
