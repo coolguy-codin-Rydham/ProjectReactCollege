@@ -1,3 +1,7 @@
+import Icon from "/Services/Icon.svg"
+import Icon1 from "/Services/Inon1.svg"
+
+
 export const NavItems = [
     {
         name : "Home.",
@@ -151,4 +155,17 @@ export const Lang = [
         name : "Slovenian",
         value : "sl"
     },
+]
+
+export const CardContent = [
+    {
+        Image: Icon,
+        Heading: "Web & Graphic Design",
+        Content: " Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt."
+    },
+    {
+        Image:Icon1,
+        Heading: "Web & App Development",
+        Content: " Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt."
+    }
 ]

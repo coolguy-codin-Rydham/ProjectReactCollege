@@ -4,17 +4,12 @@ This is my react <i> <b> Project for final evaluation at college</b> </i>, I'll 
 <ol>
 <li>
 <p>Navbar is done
-    <b>Features Used</b>
-    <ul>
-    <li>JSX</li>
-    <li>ES6</li>
-    <li>UseState Hook</li>
-    <li>Map</li>
-    </ul>
 </p>
 </li>
 <li>
-    Done with the Hero Section.
+   <p> Done with the Hero Section.</p>
 </li>
-<li>Moving on to part2, Services</li>
+<li>
+<p>    Done with the Services Part</p>
+</li>
 </ol>
