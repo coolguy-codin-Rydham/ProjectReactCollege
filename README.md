@@ -30,4 +30,5 @@ Projects Section Done
 <li>News Section Done</li>
 <li>Project Completed</li>
 <li>Gonna try to add animations let's see</li>
+<li>Last Commit on Readme Hope So</li>
 </ol>
