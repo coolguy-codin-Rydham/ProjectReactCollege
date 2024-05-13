@@ -22,7 +22,7 @@ This is my react <i> <b> Project for final evaluation at college</b> </i>, I'll 
 </p>
 </li>
 <li>
-Added TS particles looks good asf
+Added TS particles looks good 
 </li>
 <li>
 Projects Section Done
