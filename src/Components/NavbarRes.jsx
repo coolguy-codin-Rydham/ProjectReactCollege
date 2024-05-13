@@ -2,12 +2,24 @@ import Cross from "/Icons/maki_cross.svg";
 import PropTypes from "prop-types";
 import Right from "/Icons/Right.svg"
 import {AnimatePresence, motion} from "framer-motion"
+import { RefCon } from "../App";
+import { useContext } from "react";
 
 const NavbarRes = ({ Logo, NavItems, Lang, isShow }) => {
+  const {HomeRef, ServicesRef, NewsRef, ContactRef} = useContext(RefCon)
+
+  const arr = [HomeRef, ServicesRef, NewsRef, ContactRef];
+  
+  const handleClick=(index)=>{
+
+    arr[index].current.scrollIntoView({ behavior: 'smooth' });
+    isShow(false)
+
+   }
   return (
     <AnimatePresence>
       
-    <motion.div key={Logo}
+    <motion.div key={isShow}
     initial={{x:200, opacity:0.4}}
     animate={{x:0, opacity:1}}
     exit={{x:200, opacity:0.4}}
@@ -29,7 +41,7 @@ const NavbarRes = ({ Logo, NavItems, Lang, isShow }) => {
                 key={index}
                 className="text-[#314584] hover:underline duration-100 font-semibold hover:font-bold transition-all"
               >
-                <a href={item.href}>{item.name}</a>
+                <p onClick={()=>handleClick(index)} href={item.href}>{item.name}</p>
               </li>
             );
           })}

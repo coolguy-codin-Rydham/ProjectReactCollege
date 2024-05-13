@@ -3,7 +3,11 @@ import ManPhone from "/Home/ManPhone.svg";
 import Button from "../Commons/Button";
 import HeroTypeWritter from "../Commons/HeroTypeWritter";
 import {motion} from "framer-motion"
+import { useContext } from "react";
+import { RefCon } from "../App";
+
 const Hero = () => {
+  const {Heroref} = useContext(RefCon)
   return (
     <>
       <div className="relative flex items-end justify-end w-full">
@@ -13,8 +17,8 @@ const Hero = () => {
           alt=""
         />
       </div>
-      <div className="relative flex items-center justify-center w-full">
-        <div className="flex flex-col lg:flex-row max-w-[1440px] items-center justify-center w-full h-full p-5">
+      <div ref = {Heroref} className="relative flex items-center justify-center w-full">
+        <div className="flex flex-col lg:flex-row max-w-[1440px] items-center justify-center w-full h-full  px-5 pt-5 pb-20">
           <motion.div
           initial={{x:-50, opacity:0.5}}
           whileInView={{x:0, opacity:1}}

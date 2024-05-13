@@ -1,9 +1,13 @@
 import Button from "../Commons/Button";
 import {motion } from "framer-motion"
 import "./Contact.css";
+import { RefCon } from "../App";
+import { useContext } from "react";
 const Contact = () => {
+  const {ContactRef} = useContext(RefCon)
+
   return (
-    <div className="flex items-center justify-center w-full p-10">
+    <div ref = {ContactRef} className="flex items-center justify-center w-full p-10">
       <div className="max-w-[1440px] w-full p-10">
         <motion.h4 
         initial={{x:50, opacity:0.5}}

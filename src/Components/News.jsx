@@ -1,7 +1,12 @@
 import Cardi from "./Cardi";
 import Wave5 from "/Wave5.svg";
 import { motion } from "framer-motion";
+import { RefCon } from "../App";
+import { useContext } from "react";
+
 const News = () => {
+
+  const {NewsRef} = useContext(RefCon);
   return (
     <>
       <div className="relative flex items-end justify-end w-full">
@@ -11,7 +16,7 @@ const News = () => {
           alt=""
         />
       </div>
-      <div className="flex items-center justify-center w-full h-full p-10">
+      <div ref={NewsRef} className="flex items-center justify-center w-full h-full p-10">
         <div className="max-w-[1440px] w-full p-10">
           <motion.h5
             initial={{ x: 50, opacity: 0.3 }}

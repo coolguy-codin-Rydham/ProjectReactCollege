@@ -20,7 +20,7 @@ const ImageGrid = () => {
       {select.map((proj, index)=>{
         return(
           <div key={index} className="">
-            <a href={proj.Link}><img src={proj.Image} alt="" className="relative z-50 rounded"/></a>
+            <a href={proj.Link}><img src={proj.Image} alt="" className="relative z-50 duration-200 rounded hover:shadow-lg hover:shadow-black/70 hover:scale-105"/></a>
           </div>
         )
       })}

@@ -3,17 +3,22 @@ import Card from "./Card";
 import Wave2 from "/Wave2.svg";
 import { CardContent } from "../Constants/Constants.js";
 import { motion } from "framer-motion";
+import { RefCon } from "../App.jsx";
+import { useContext } from "react";
+
 const Services = () => {
+
+  const {ServicesRef} = useContext(RefCon)
   return (
     <>
-      <div className="relative flex items-start w-full justify-normal">
+      <div  className="relative flex items-start w-full justify-normal">
         <img src={Wave2} className="absolute top-32 -z-50" alt="" />
       </div>
-      <div className="flex items-center justify-center w-full pb-10">
+      <div ref={ServicesRef} className="flex items-center justify-center w-full pb-10">
         <div className="max-w-[1440px] grid lg:grid-cols-3 grid-cols-1 w-full h-full p-10">
           <motion.div
             initial={{ x: -50, opacity: 0.4 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1, once:true }}
             transition={{ duration: 0.3 }}
             exit={{ x: -50, opacity: 0.4 }}
             className="flex flex-col items-start justify-center w-full h-full px-10 py-24"

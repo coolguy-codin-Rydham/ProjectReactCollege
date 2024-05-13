@@ -5,8 +5,21 @@ import Ham from "/Icons/ham.svg"
 import Right from "/Icons/Right.svg"
 import { useState } from "react";
 import {motion} from "framer-motion"
+import { RefCon } from "../App";
+import { useContext } from "react";
+
 const Navbar = () => {
+  const {HomeRef, ServicesRef, NewsRef, ContactRef} = useContext(RefCon)
+
+  const arr = [HomeRef, ServicesRef, NewsRef, ContactRef];
+
    const [show, isShow] = useState(false)
+
+   const handleClick=(index)=>{
+
+    arr[index].current.scrollIntoView({ behavior: 'smooth' });
+
+   }
   return (
     <motion.div 
     initial={{y:-50, opacity:0.4}}
@@ -24,9 +37,9 @@ const Navbar = () => {
           return (
             <li
               key={index}
-              className="text-[#314584] hover:underline duration-100 font-semibold hover:font-bold transition-all"
+              className="text-[#314584] hover:underline duration-100 cursor-pointer font-semibold hover:font-bold transition-all"
             >
-              <a href={item.href}>{item.name}</a>
+              <p onClick={()=>handleClick(index)} href={item.href}>{item.name}</p>
             </li>
           );
         })}
