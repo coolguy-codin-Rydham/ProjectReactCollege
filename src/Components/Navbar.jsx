@@ -67,7 +67,7 @@ const Navbar = () => {
       </div>
           <div className="flex items-center justify-center"><img src={Ham} className="w-16 h-10 cursor-pointer lg:hidden" onClick={()=>isShow(true)} alt="" /></div>
 
-          {show &&  <NavbarRes isShow={isShow} Logo={Logo} NavItems={NavItems} Lang={Lang}/>}
+          {show &&  <NavbarRes isShow={isShow} show={show} Logo={Logo} NavItems={NavItems} Lang={Lang}/>}
 
     </motion.div>
   );
