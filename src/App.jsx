@@ -1,13 +1,15 @@
 import { createContext, useRef } from "react";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
-import Navbar from "./Components/Navbar";
-import News from "./Components/News";
-import ParticlesComponent from "./Components/ParticlesContainer";
-import Projects from "./Components/Projects";
-import Reviews from "./Components/Reviews";
-import Services from "./Components/Services";
+import {
+  Contact,
+  Footer,
+  Hero,
+  Navbar,
+  News,
+  ParticlesComponent,
+  Projects,
+  Reviews,
+  Services,
+} from "./Components";
 export const RefCon = createContext(null);
 
 function App() {
