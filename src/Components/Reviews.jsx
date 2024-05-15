@@ -51,7 +51,7 @@ const Reviews = () => {
               <motion.p
               initial={{x:50, opacity:0}}
               animate={{x:0, opacity:1}}
-              transition={{duration:0.3}}
+              transition={{duration:0.3,type:"spring", bounce:0.3, }}
               exit={{x:-50, opacity:0}}
 
               key={currIndex} className="text-[#314584] ">
