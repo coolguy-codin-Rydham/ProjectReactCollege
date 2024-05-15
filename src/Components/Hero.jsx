@@ -43,7 +43,7 @@ const Hero = () => {
             </p>
             <div className="flex gap-2">
               <Button><p onClick={()=>handleClick(ServicesRef)}>About Us</p></Button>
-              <button className="text-[#314584] text-sm font-bold">
+              <button onClick={()=>handleClick(ServicesRef)} className="text-[#314584] text-sm font-bold">
                 Get in Touch
               </button>
             </div>
