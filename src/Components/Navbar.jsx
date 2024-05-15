@@ -9,9 +9,9 @@ import { RefCon } from "../App";
 import { useContext } from "react";
 
 const Navbar = () => {
-  const {HomeRef, ServicesRef, NewsRef, ContactRef} = useContext(RefCon)
+  const {HomeRef, ServicesRef, NewsRef, ContactRef, FooterRef} = useContext(RefCon)
 
-  const arr = [HomeRef, ServicesRef, NewsRef, ContactRef];
+  const arr = [HomeRef, ServicesRef, NewsRef, ContactRef, FooterRef];
 
    const [show, isShow] = useState(false)
 
@@ -61,7 +61,7 @@ const Navbar = () => {
             );
           })}
         </select>
-        <button className="px-4 py-2 flex items-center duration-150 gap-4 rounded shadow-lg hover:scale-[1.01] text-[#FF3946] mb-2 font-semibold hover:shadow-black/40 shadow-black/20 ">
+        <button onClick={()=>handleClick(3)} className="px-4 py-2 flex items-center duration-150 gap-4 rounded shadow-lg hover:scale-[1.01] text-[#FF3946] mb-2 font-semibold hover:shadow-black/40 shadow-black/20 ">
           Contact Us <img src={Right} className="w-5 h-5" alt="" />
         </button>
       </div>

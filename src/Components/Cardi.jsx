@@ -2,7 +2,7 @@ import Right from "/Icons/Right2.svg"
 
 const Cardi = () => {
   return (
-    <div className="relative flex flex-col gap-5 z-50 w-full p-10 bg-white shadow-xl shadow-black/40 hover:shadow-3xl hover:shadow-black/60 group hover:bg-[#FF3946] duration-200">
+    <div className="relative flex flex-col rounded gap-5 z-50 w-full p-10 bg-white shadow-xl shadow-black/40 hover:shadow-3xl hover:shadow-black/60 group hover:bg-[#FF3946] duration-500">
         <div>
       <h4 className="font-semibold group-hover:text-white  text-[#314584]">New Adventure</h4>
       <p className="text-sm text-[#314584] group-hover:text-white">17 March 2019</p>

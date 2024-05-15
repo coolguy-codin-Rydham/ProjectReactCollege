@@ -7,7 +7,12 @@ import { useContext } from "react";
 import { RefCon } from "../App";
 
 const Hero = () => {
-  const {Heroref} = useContext(RefCon)
+  const {Heroref, ServicesRef} = useContext(RefCon)
+  const handleClick=(Ref)=>{
+
+    Ref.current.scrollIntoView({ behavior: 'smooth' });
+
+   }
   return (
     <>
       <div className="relative flex items-end justify-end w-full">
@@ -26,9 +31,9 @@ const Hero = () => {
           exit={{x:-50, opacity:0.5}}
           className="flex flex-col items-center justify-center w-full h-full px-10 py-24 text-center lg:text-left lg:items-start">
             <h1 className="text-[#314584] font-semibold lg:text-[4rem] text-[3.5rem] pb-2">
-              The Spirit of <br /> D
+              The Spirit of <br /> Digital
               <HeroTypeWritter
-                words={["igital Agency", "igital Firm"]}
+                words={[" Agency", " Firm"]}
                 speed={200}
               />
             </h1>
@@ -37,7 +42,7 @@ const Hero = () => {
               ut <br /> dolor iste ad dicta aperiam inventore
             </p>
             <div className="flex gap-2">
-              <Button>About Us</Button>
+              <Button><p onClick={()=>handleClick(ServicesRef)}>About Us</p></Button>
               <button className="text-[#314584] text-sm font-bold">
                 Get in Touch
               </button>

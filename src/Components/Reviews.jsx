@@ -5,7 +5,7 @@ import Left from "/Icons/Left.svg";
 import { Reviews as R } from "../Constants/Constants.js";
 import { useState } from "react";
 import React from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Reviews = () => {
   const [currIndex, setCurrIndex] = useState(0);
@@ -47,11 +47,12 @@ const Reviews = () => {
               className="text-lg font-bold uppercase duration-200 pb-5  text-[#ff3946]">
                 {currReview.Name} Said:{" "}
               </motion.h3>
+              <AnimatePresence mode="wait">
               <motion.p
-              initial={{x:50, opacity:0.3}}
+              initial={{x:50, opacity:0}}
               animate={{x:0, opacity:1}}
               transition={{duration:0.3}}
-              exit={{x:-50, opacity:0.3}}
+              exit={{x:-50, opacity:0}}
 
               key={currIndex} className="text-[#314584] ">
                 {currReview.Review.split("<br />").map((line, index) => (
@@ -61,6 +62,7 @@ const Reviews = () => {
                   </React.Fragment>
                 ))}
               </motion.p>
+              </AnimatePresence>
             </>
             <div className="flex gap-2 pt-10">
               <div

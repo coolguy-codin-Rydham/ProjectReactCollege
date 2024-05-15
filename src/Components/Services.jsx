@@ -8,7 +8,12 @@ import { useContext } from "react";
 
 const Services = () => {
 
-  const {ServicesRef} = useContext(RefCon)
+  const {ServicesRef, ContactRef} = useContext(RefCon)
+  const handleClick=(ref)=>{
+
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+
+   }
   return (
     <>
       <div  className="relative flex items-start w-full justify-normal">
@@ -27,7 +32,7 @@ const Services = () => {
               Anything you need we&apos;ve <br /> got you covered
             </h1>
             <div className="flex items-center justify-center w-full lg:justify-start">
-              <Button>Get in Touch</Button>
+              <Button><p onClick={()=>handleClick(ContactRef)}>Get in Touch</p></Button>
             </div>
           </motion.div>
           {CardContent.map((card, index) => {

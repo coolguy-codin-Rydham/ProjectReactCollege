@@ -3,10 +3,14 @@ import Dribble from "/Socials/Dribble.svg"
 import FB from "/Socials/FB.svg"
 import Twitter from "/Socials/Twitter.svg"
 import {motion} from "framer-motion"
+import { RefCon } from "../App";
+import { useContext } from "react";
 //hey
 const Footer = () => {
+  const {FooterRef} = useContext(RefCon)
+
   return (
-    <div className="flex items-center justify-center bg-[#314584] w-full relative z-50 p-10">
+    <div ref = {FooterRef} className="flex items-center justify-center bg-[#314584] w-full relative z-50 p-10">
       <motion.div 
       initial={{opacity:0}}
       whileInView={{opacity:1}}
