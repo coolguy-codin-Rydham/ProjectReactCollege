@@ -21,7 +21,8 @@ const NavbarRes = ({ Logo, NavItems, Lang, isShow}) => {
         animate={{ x: 0, opacity: 1 }}
         exit={{ x: 200, opacity: 0.4 }}
         transition={{ duration: 0.3 }}
-        className="absolute z-50 top-0 right-0 h-screen backdrop-blur-xl bg-slate-700/10 w-[30rem]"
+        className="absolute z-50 top-0 right-0 h-screen backdrop-blur-xl bg-slate-700/10 w-[25rem]"
+        
       >
         <div className="p-10">
           <div id="logo" className="grid w-full grid-cols-2 gap-10 pb-10 pr-10">
@@ -37,7 +38,7 @@ const NavbarRes = ({ Logo, NavItems, Lang, isShow}) => {
               />
             </div>
           </div>
-          <ul id="navItems" className="grid grid-cols-2 gap-y-10">
+          <ul id="navItems" className="grid grid-cols-1 gap-y-10">
             {NavItems.map((item, index) => {
               return (
                 <li
@@ -51,7 +52,7 @@ const NavbarRes = ({ Logo, NavItems, Lang, isShow}) => {
               );
             })}
           </ul>
-          <div id="LangCont" className="grid grid-cols-2 pt-10 md:hidden">
+          <div id="LangCont" className="grid grid-cols-1 pt-10 md:hidden">
             <div className="flex items-center ">
               <select
                 name="lang"
@@ -71,7 +72,7 @@ const NavbarRes = ({ Logo, NavItems, Lang, isShow}) => {
                 })}
               </select>
             </div>
-            <button className="px-4 py-2 flex items-center duration-150 gap-4 rounded shadow-lg hover:scale-[1.01] text-[#FF3946] bg-white mb-2 font-semibold hover:shadow-black/40 shadow-black/20 ">
+            <button onClick={()=>handleClick(3)} className="px-4 py-2 mt-2 flex items-center duration-150 gap-4 rounded shadow-lg hover:scale-[1.01] text-[#FF3946] bg-white mb-2 font-semibold hover:shadow-black/40 shadow-black/20 ">
               Contact Us <img src={Right} className="w-5 h-5" alt="" />
             </button>
           </div>
