@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { RefCon } from "../App";
 
 const Hero = () => {
-  const {Heroref, ServicesRef} = useContext(RefCon)
+  const {HeroRef, ServicesRef} = useContext(RefCon)
   const handleClick=(Ref)=>{
 
     Ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -22,7 +22,7 @@ const Hero = () => {
           alt=""
         />
       </div>
-      <div ref = {Heroref} className="relative flex items-center justify-center w-full">
+      <div ref = {HeroRef} className="relative flex items-center justify-center w-full">
         <div className="flex flex-col lg:flex-row max-w-[1440px] items-center justify-center w-full h-full  px-5 pt-5 pb-20">
           <motion.div
           initial={{x:-50, opacity:0.5}}

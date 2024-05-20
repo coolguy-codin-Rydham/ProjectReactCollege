@@ -3,7 +3,7 @@ import Desk from "/Rivews/Desk.svg";
 import Right from "/Icons/Right.svg";
 import Left from "/Icons/Left.svg";
 import { Reviews as R } from "../Constants/Constants.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -16,6 +16,13 @@ const Reviews = () => {
   const handleNext = () => {
     setCurrIndex(currIndex < R.length - 1 ? currIndex + 1 : currIndex);
   };
+
+  useEffect(()=>{
+    const interval = setInterval(() => {
+      setCurrIndex(currIndex < R.length - 1 ? currIndex + 1 : 0);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [currIndex])
   return (
     <>
       <div className="relative flex items-end justify-end w-full pt-10">
