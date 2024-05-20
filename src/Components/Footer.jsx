@@ -10,7 +10,7 @@ const Footer = () => {
   const {FooterRef} = useContext(RefCon)
 
   return (
-    <div ref = {FooterRef} className="flex items-center justify-center bg-[#314584] w-full relative z-50 p-10">
+    <footer ref = {FooterRef} className="flex items-center justify-center bg-[#314584] w-full relative z-40 p-10">
       <motion.div 
       initial={{opacity:0}}
       whileInView={{opacity:1}}
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
       </motion.div>
       
-    </div>
+    </footer>
   )
 }
 

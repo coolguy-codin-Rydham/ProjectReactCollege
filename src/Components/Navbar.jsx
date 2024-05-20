@@ -26,7 +26,7 @@ const Navbar = () => {
     whileInView={{y:0, opacity:1}}
     transition={{duration:0.3}}
     exit={{y:-50, opacity:0.4}}
-    className="max-w-[1500px] h-full w-full max-lg:px-10 py-6 flex items-center justify-between">
+    className="max-w-[1500px] h-full sticky top-0 bg-white/40 backdrop-blur-xl z-50 w-full max-lg:px-10 py-6 flex items-center justify-between">
       <div id="logo" className="w-1/2">
         <a href="#">
           <img src={Logo} alt="" />

@@ -23,7 +23,7 @@ const Contact = () => {
         transition={{duration:0.3}}
         exit={{x:50, opacity:0.5}}
         className="text-5xl text-[#314584] font-semibold">Get in Touch</motion.h1>
-        <div className="py-10 Inputs">
+        <div className="relative z-40 py-10 Inputs">
           <motion.input
             initial={{opacity:0.4, width:"50%"}}
 

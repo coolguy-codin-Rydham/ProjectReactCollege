@@ -36,7 +36,7 @@ const News = () => {
           >
             Check Our News
           </motion.h1>
-          <div className="grid grid-cols-1 gap-10 pt-10 pb-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="relative z-40 grid grid-cols-1 gap-10 pt-10 pb-5 md:grid-cols-2 lg:grid-cols-3">
             <motion.div
             initial={{x:-50, opacity:0.5}}
             whileInView={{x:0, opacity:1}}

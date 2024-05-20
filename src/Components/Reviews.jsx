@@ -73,7 +73,7 @@ const Reviews = () => {
             </>
             <div className="flex gap-2 pt-10">
               <div
-                className={`flex items-center relative z-50 cursor-pointer justify-center w-10 h-10 ${
+                className={`flex items-center relative z-40 cursor-pointer justify-center w-10 h-10 ${
                   currIndex == 0 ? "bg-gray-200 scale-90" : "bg-[#FF3946]"
                 } duration-200 rounded-full`}
                 onClick={handlePrev}
@@ -81,7 +81,7 @@ const Reviews = () => {
                 <img src={Left} className="h-6" alt="" />
               </div>
               <div
-                className={`flex items-center justify-center relative z-50 cursor-pointer w-10 h-10 ${
+                className={`flex items-center justify-center relative z-40 cursor-pointer w-10 h-10 ${
                   currIndex == R.length - 1
                     ? "bg-gray-200 scale-90"
                     : "bg-[#FF3946]"

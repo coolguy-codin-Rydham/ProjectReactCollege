@@ -15,7 +15,7 @@ const ImageGrid = () => {
     whileInView={{y:0, opacity:1}}
     transition={{duration:0.3}}
     exit={{y:-50, opacity:0.4}}
-    key={select} className={` relative z-50 grid w-full h-full grid-cols-1 gap-2  p-10 lg:grid-cols-3 md:grid-cols-2 `}>
+    key={select} className={` relative z-40 grid w-full h-full grid-cols-1 gap-2  p-10 lg:grid-cols-3 md:grid-cols-2 `}>
       {select.map((proj, index)=>{
         return(
           <div onMouseEnter={()=>setHovered(proj)} onMouseLeave={()=>setHovered(null)} key={index} className="">

@@ -9,7 +9,7 @@ const Card = ({content, image, heading}) => {
     transition={{duration:0.3}}
     exit={{x:50, opacity:0.4}}
     className="w-full h-full py-12 px-14">
-      <div className="relative z-50 flex flex-col items-start justify-start w-full h-full px-6 duration-150 hover:bg-[#f5f5f5] shadow-lg py-14 bg-white hover:shadow-black/70 shadow-black/60">
+      <div className="relative z-40 flex flex-col items-start justify-start w-full h-full px-6 duration-150 hover:bg-[#f5f5f5] shadow-lg py-14 bg-white hover:shadow-black/70 shadow-black/60">
         <div className="pb-6">
           <img src={image} alt="" />
         </div>
