@@ -21,7 +21,7 @@ const NavbarRes = ({ Logo, NavItems, Lang, isShow}) => {
         animate={{ x: 0, opacity: 1 }}
         exit={{ x: 200, opacity: 0.4 }}
         transition={{ duration: 0.3 }}
-        className="absolute z-50 top-0 right-0 h-screen backdrop-blur-xl bg-slate-700/10 w-[25rem]"
+        className="absolute z-50 top-0 right-0 h-screen backdrop-blur-2xl bg-white w-[25rem]"
         
       >
         <div className="p-10">
