@@ -20,7 +20,7 @@ const Services = () => {
         <img src={Wave2} className="absolute top-32 -z-50" alt="" />
       </div>
       <div ref={ServicesRef} className="flex items-center justify-center w-full pb-10">
-        <div className="max-w-[1440px] grid lg:grid-cols-3 grid-cols-1 w-full h-full p-10">
+        <div className="max-w-[1440px] grid lg:grid-cols-3 grid-cols-1 w-full h-full p-10 max-lg:p-5">
           <motion.div
             initial={{ x: -50, opacity: 0.4 }}
             whileInView={{ x: 0, opacity: 1, once:true }}
