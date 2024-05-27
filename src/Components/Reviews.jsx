@@ -11,10 +11,10 @@ const Reviews = () => {
   const [currIndex, setCurrIndex] = useState(0);
   const currReview = R[currIndex];
   const handlePrev = () => {
-    setCurrIndex(currIndex > 0 ? currIndex - 1 : currIndex);
+    setCurrIndex(currIndex > 0 ? currIndex - 1 : R.length-1);
   };
   const handleNext = () => {
-    setCurrIndex(currIndex < R.length - 1 ? currIndex + 1 : currIndex);
+    setCurrIndex(currIndex < R.length - 1 ? currIndex + 1 : 0);
   };
 
   useEffect(()=>{

@@ -63,3 +63,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
+//db.collname.updateOne({roll:3}, {$set:{age:'25'}})
